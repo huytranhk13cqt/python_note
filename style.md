@@ -94,3 +94,57 @@ plt.show()
 - Việc sử dụng các kiểu nét khác nhau giúp phân biệt các đường trong cùng một biểu đồ.
 
 Nếu bạn cần thêm thông tin hoặc ví dụ cụ thể hơn, hãy cho tôi biết!
+
+-----
+
+
+Dưới đây là danh sách các màu cơ bản trong Matplotlib cùng với ký hiệu tương ứng mà bạn có thể sử dụng:
+
+### Danh sách các màu cơ bản và ký hiệu
+
+| Màu         | Ký hiệu   |
+|-------------|-----------|
+| Đỏ         | `'r'`     |
+| Xanh dương  | `'b'`     |
+| Xanh lá cây | `'g'`     |
+| Vàng       | `'y'`     |
+| Cam        | `'orange'` (hoặc `'orange'`) |
+| Tím        | `'purple'` (hoặc `'m'`) |
+| Hồng       | `'pink'`  |
+| Nâu        | `'brown'` |
+| Xám        | `'gray'` (hoặc `'grey'`) |
+| Đen        | `'k'`     |
+| Trắng      | `'w'`     |
+
+### Ví dụ sử dụng màu cơ bản bằng ký hiệu trong Matplotlib
+
+Dưới đây là một ví dụ về cách sử dụng các màu cơ bản bằng ký hiệu trong biểu đồ:
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Dữ liệu mẫu
+x = np.linspace(0, 10, 100)
+y1 = np.sin(x)
+y2 = np.cos(x)
+
+# Vẽ biểu đồ với các màu cơ bản bằng ký hiệu
+plt.plot(x, y1, 'r', label='Sin (Đỏ)')  # Màu đỏ
+plt.plot(x, y2, 'b', label='Cos (Xanh dương)')  # Màu xanh dương
+plt.plot(x, y1 + 0.5, 'g', label='Sin (Xanh lá cây)')  # Màu xanh lá cây
+plt.plot(x, y2 + 0.5, 'y', label='Cos (Vàng)')  # Màu vàng
+
+# Thêm nhãn và chú thích
+plt.title('Ví dụ về các màu cơ bản trong Matplotlib bằng ký hiệu')
+plt.xlabel('Trục X')
+plt.ylabel('Trục Y')
+plt.legend()
+plt.show()
+```
+
+### Tóm tắt
+- Bạn có thể sử dụng ký hiệu để chỉ định màu sắc cho các đường và điểm dữ liệu trong biểu đồ.
+- Việc sử dụng màu sắc khác nhau giúp phân biệt các đường và điểm trong cùng một biểu đồ, làm cho biểu đồ dễ đọc hơn.
+
+Nếu bạn cần thêm thông tin hoặc ví dụ cụ thể hơn, hãy cho tôi biết!
